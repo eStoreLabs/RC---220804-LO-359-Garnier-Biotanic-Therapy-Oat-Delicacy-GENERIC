@@ -113,10 +113,35 @@ body {
     }
     &__logo-image {
       display: block;
-      margin: 0 auto;
+      @include img;
+      width: 70%;
     }
     &__label {
+      position: relative;
+      top: -125px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      order: 2;
+      padding: 5px;
+    }
+    &__label-image {
+      width: auto;
+    }
+    &__label-text {
+      width: 50%;
+      font-size: 13px;
+    }
+    &__packshot {
+      padding: 10px;
+      position: relative;
+      top: -125px;
       order: 1;
+    }
+
+    &__image {
+      @include img;
     }
   }
 
@@ -133,6 +158,57 @@ body {
   }
 
   .es-footer {
+  }
+
+  @media screen and (min-width: 340px) {
+    .es-kv {
+      &__logo-image {
+        width: 70%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 394px) {
+    .es-kv {
+      &__packshot {
+        margin: 0 auto;
+        width: 90%;
+        top: -50px;
+      }
+
+      &__label {
+        top: -50px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 474px) {
+    .es-kv {
+      &__logo-image {
+        width: 60%;
+      }
+      &__packshot {
+        top: -75px;
+      }
+    }
+    // .es-kv {
+    //   &__container {
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     background: url(images/photo.jpg) no-repeat;
+    //     background-size: cover;
+    //     height: 467px;
+    //   }
+    //   &__logo {
+    //     width: 50%;
+    //     height: auto;
+    //     margin: 10px;
+    //     background: none;
+    //   }
+    //   &__packshot {
+    //     position: static;
+    //   }
+    // }
   }
 }
 
