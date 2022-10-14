@@ -108,6 +108,11 @@ body {
   display: block;
   margin: 0 auto;
 }
+#es-garnier.es-garnier .es-pack__image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
 @media screen and (min-width: 340px) {
   #es-garnier.es-garnier .es-kv__logo-image {
     width: 70%;
