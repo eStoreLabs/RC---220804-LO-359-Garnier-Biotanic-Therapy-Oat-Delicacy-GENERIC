@@ -58,11 +58,6 @@ body {
   font-family: "Gotham Book", sans-serif;
   color: #111;
 }
-#es-garnier.es-garnier .es-kv__container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
 #es-garnier.es-garnier .es-kv__logo {
   background: url(images/photo.jpg) no-repeat;
   background-size: cover;
@@ -124,6 +119,33 @@ body {
   }
   #es-garnier.es-garnier .es-kv__packshot {
     top: -75px;
+  }
+}
+@media screen and (min-width: 520px) {
+  #es-garnier.es-garnier .es-kv__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 462px;
+    padding: 10px;
+    background: url(images/photo.jpg) no-repeat;
+    background-size: auto;
+  }
+  #es-garnier.es-garnier .es-kv__logo {
+    flex: 1;
+    flex-basis: 50%;
+    background: none;
+  }
+  #es-garnier.es-garnier .es-kv__logo-image {
+    width: auto;
+  }
+  #es-garnier.es-garnier .es-kv__packshot {
+    flex: 1;
+    flex-basis: 50%;
+    position: static;
+  }
+  #es-garnier.es-garnier .es-kv__label {
+    position: static;
   }
 }
 
