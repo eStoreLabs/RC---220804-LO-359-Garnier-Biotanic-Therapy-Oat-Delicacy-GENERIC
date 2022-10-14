@@ -142,6 +142,9 @@ body {
   }
 
   .es-info {
+    &__img {
+      @include img;
+    }
   }
 
   .es-ba {
