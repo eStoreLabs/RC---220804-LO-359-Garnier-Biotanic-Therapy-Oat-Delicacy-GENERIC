@@ -148,6 +148,9 @@ body {
   }
 
   .es-ba {
+    &__image {
+      @include img;
+    }
   }
 
   .es-recycling {
