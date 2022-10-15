@@ -142,6 +142,45 @@ body {
   }
 
   .es-info {
+    &__title-group {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      // justify-content: flex-start;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+    &__border-img {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translateY(-50%);
+      // margin: auto 0;
+
+      &--after {
+        left: 85%;
+        transform: scaleX(-1) translateY(-50%);
+      }
+    }
+    &__title {
+      @include text;
+      margin-bottom: 5px;
+      font-size: 25px;
+      font-family: 'Gotham Black', sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      color: $dark-pink;
+    }
+
+    &__subtitle {
+      @include text;
+      font-size: 15px;
+      color: $dark-pink;
+      // text-align: center;
+      text-transform: uppercase;
+    }
+
     &__img {
       @include img;
     }

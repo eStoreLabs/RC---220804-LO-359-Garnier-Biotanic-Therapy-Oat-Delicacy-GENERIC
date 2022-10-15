@@ -98,6 +98,49 @@ body {
   display: block;
   margin: 0 auto;
 }
+#es-garnier.es-garnier .es-info__title-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+#es-garnier.es-garnier .es-info__border-img {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+#es-garnier.es-garnier .es-info__border-img--after {
+  left: 85%;
+  transform: scaleX(-1) translateY(-50%);
+}
+#es-garnier.es-garnier .es-info__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-family: "Gotham Black", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d49899;
+}
+#es-garnier.es-garnier .es-info__subtitle {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 15px;
+  color: #d49899;
+  text-transform: uppercase;
+}
 #es-garnier.es-garnier .es-info__img {
   max-width: 100%;
   display: block;
