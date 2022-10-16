@@ -102,9 +102,10 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin-bottom: 40px;
+  padding: 10px 20px;
+  margin-bottom: 60px;
 }
 #es-garnier.es-garnier .es-info__border-img {
   position: absolute;
@@ -126,7 +127,6 @@ body {
   margin-bottom: 5px;
   font-size: 25px;
   font-family: "Gotham Black", sans-serif;
-  text-align: center;
   text-transform: uppercase;
   color: #d49899;
 }
@@ -137,7 +137,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-size: 15px;
+  font-size: 20px;
   color: #d49899;
   text-transform: uppercase;
 }
@@ -145,6 +145,47 @@ body {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  padding: 10px;
+}
+#es-garnier.es-garnier .es-info__container {
+  padding: 10px;
+}
+#es-garnier.es-garnier .es-info__single {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 38px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 31.04px 0.96px rgba(49, 47, 47, 0.09);
+}
+#es-garnier.es-garnier .es-info__single:not(:last-child) {
+  margin-bottom: 20px;
+}
+#es-garnier.es-garnier .es-info__card-image {
+  margin-bottom: 15px;
+}
+#es-garnier.es-garnier .es-info__card-title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin-bottom: 10px;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-info__card-subtitle {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-align: center;
 }
 #es-garnier.es-garnier .es-ba__image {
   max-width: 100%;

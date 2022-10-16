@@ -100,8 +100,6 @@ body {
   }
 
   .es-kv {
-    &__container {
-    }
     &__logo {
       background: url(images/photo.jpg) no-repeat;
       background-size: cover;
@@ -146,17 +144,16 @@ body {
       position: relative;
       display: flex;
       flex-direction: column;
-      // justify-content: flex-start;
+      justify-content: center;
       align-items: center;
-      padding: 10px;
-      margin-bottom: 40px;
+      padding: 10px 20px;
+      margin-bottom: 60px;
     }
     &__border-img {
       position: absolute;
       top: 50%;
       left: 5%;
       transform: translateY(-50%);
-      // margin: auto 0;
 
       &--after {
         left: 85%;
@@ -168,21 +165,51 @@ body {
       margin-bottom: 5px;
       font-size: 25px;
       font-family: 'Gotham Black', sans-serif;
-      text-align: center;
       text-transform: uppercase;
       color: $dark-pink;
     }
 
     &__subtitle {
       @include text;
-      font-size: 15px;
+      font-size: 20px;
       color: $dark-pink;
-      // text-align: center;
       text-transform: uppercase;
     }
 
     &__img {
       @include img;
+      padding: 10px;
+    }
+    &__container {
+      padding: 10px;
+    }
+
+    &__single {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 38px;
+      border-radius: 20px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 2px 31.04px 0.96px rgba(49, 47, 47, 0.09);
+    }
+    &__single:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &__card-image {
+      margin-bottom: 15px;
+    }
+    &__card-title {
+      @include text;
+      margin-bottom: 10px;
+      font-family: 'Gotham Bold', sans-serif;
+      font-size: 20px;
+      text-align: center;
+    }
+    &__card-subtitle {
+      @include text;
+      text-align: center;
     }
   }
 
