@@ -72,7 +72,7 @@ body {
 }
 #es-garnier.es-garnier .es-kv__label {
   position: relative;
-  top: -125px;
+  top: -100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,12 +187,189 @@ body {
   font-weight: inherit;
   text-align: center;
 }
+#es-garnier.es-garnier .es-ba__image-container {
+  position: relative;
+}
 #es-garnier.es-garnier .es-ba__image {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
+#es-garnier.es-garnier .es-ba__title {
+  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-family: "Gotham Black", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d49899;
+}
+#es-garnier.es-garnier .es-ba__subtitle {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin-bottom: 20px;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d49899;
+}
+#es-garnier.es-garnier .es-ba__before-text {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 20px;
+  font-family: "Gotham Bold", sans-serif;
+  color: #fff;
+}
+#es-garnier.es-garnier .es-ba__after-text {
+  position: absolute;
+  top: 5%;
+  right: 30%;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 20px;
+  font-family: "Gotham Bold", sans-serif;
+  color: #fff;
+}
+#es-garnier.es-garnier .es-ba__after-text sup {
+  line-height: 0;
+}
+#es-garnier.es-garnier .es-pack {
+  padding: 10px;
+  background: #146b30;
+  background: linear-gradient(to bottom, #146b30 0%, #146b30 100%);
+}
+#es-garnier.es-garnier .es-pack__text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Gotham Black", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+#es-garnier.es-garnier .es-pack__text strong {
+  font-size: 60px;
+}
 #es-garnier.es-garnier .es-pack__image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-garnier.es-garnier .es-pack__title {
+  font-size: 14px;
+  color: #fff;
+}
+#es-garnier.es-garnier .es-pack__single {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#es-garnier.es-garnier .es-cross__container {
+  padding: 10px;
+  padding-top: 30px;
+}
+#es-garnier.es-garnier .es-cross__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 20px;
+  color: #d49899;
+  text-transform: uppercase;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-cross__single {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#es-garnier.es-garnier .es-cross__img {
+  margin-bottom: 20px;
+}
+#es-garnier.es-garnier .es-cross__name {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-family: "Gotham Bold", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-cross__subtitle {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-cross__button {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-family: "Gotham Bold", sans-serif;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #d49899;
+  border-radius: 10px;
+}
+#es-garnier.es-garnier .es-cross__disclaimer {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin-bottom: 30px;
+  font-size: 13px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-footer {
+  background-color: #137434;
+}
+#es-garnier.es-garnier .es-footer__img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
