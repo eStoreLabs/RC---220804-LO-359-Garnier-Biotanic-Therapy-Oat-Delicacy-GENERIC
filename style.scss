@@ -156,6 +156,7 @@ body {
       top: 50%;
       left: 5%;
       transform: translateY(-50%);
+      height: 107px;
 
       &--after {
         left: 85%;
@@ -364,6 +365,14 @@ body {
         width: 70%;
       }
     }
+    .es-info {
+      &__title-group {
+        position: relative;
+        top: -30px;
+        margin: 0 auto;
+        max-width: 350px;
+      }
+    }
   }
 
   @media screen and (min-width: 394px) {
@@ -376,6 +385,13 @@ body {
 
       &__label {
         top: -50px;
+      }
+    }
+
+    .es-info {
+      &__title-group {
+        top: 0;
+        left: 20px;
       }
     }
   }
@@ -399,7 +415,6 @@ body {
         align-items: center;
         min-height: 462px;
         padding: 10px;
-        margin-bottom: 30px;
         background: url(images/photo.jpg) no-repeat;
         background-size: auto;
       }
@@ -429,6 +444,55 @@ body {
         color: #fff;
       }
     }
+
+    .es-info {
+      &__title-group {
+        max-width: 400px;
+        top: 77px;
+        left: 56px;
+      }
+      &__title {
+        font-size: 30px;
+      }
+      &__subtitle {
+        align-self: flex-start;
+        margin-left: 40px;
+        font-size: 22px;
+      }
+      &__border-img {
+        left: 10%;
+
+        &--after {
+          left: 83%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    .es-info {
+      &__wrapper {
+        display: flex;
+      }
+      &__packshot {
+        flex: 1;
+        flex-basis: 47%;
+      }
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 5px;
+        flex: 1;
+        flex-basis: 50%;
+      }
+      &__single {
+        padding: 20px;
+        max-width: 185px;
+        margin-bottom: 20px;
+      }
+    }
   }
 
   @media screen and (min-width: 870px) {
@@ -456,6 +520,26 @@ body {
         top: 85px;
         flex-basis: 70%;
         position: relative;
+      }
+    }
+
+    .es-info {
+      &__container {
+        justify-content: center;
+        gap: 15px;
+      }
+      &__packshot {
+        flex: 1;
+        flex-basis: 50%;
+      }
+      &__single {
+        padding: 20px;
+        max-width: 210px;
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
       }
     }
   }

@@ -114,6 +114,7 @@ body {
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
+  height: 107px;
 }
 #es-garnier.es-garnier .es-info__border-img--after {
   left: 85%;
@@ -380,6 +381,12 @@ body {
   #es-garnier.es-garnier .es-kv__logo-image {
     width: 70%;
   }
+  #es-garnier.es-garnier .es-info__title-group {
+    position: relative;
+    top: -30px;
+    margin: 0 auto;
+    max-width: 350px;
+  }
 }
 @media screen and (min-width: 394px) {
   #es-garnier.es-garnier .es-kv__packshot {
@@ -389,6 +396,10 @@ body {
   }
   #es-garnier.es-garnier .es-kv__label {
     top: -50px;
+  }
+  #es-garnier.es-garnier .es-info__title-group {
+    top: 0;
+    left: 20px;
   }
 }
 @media screen and (min-width: 474px) {
@@ -406,7 +417,6 @@ body {
     align-items: center;
     min-height: 462px;
     padding: 10px;
-    margin-bottom: 30px;
     background: url(images/photo.jpg) no-repeat;
     background-size: auto;
   }
@@ -434,6 +444,48 @@ body {
     width: 110px;
     color: #fff;
   }
+  #es-garnier.es-garnier .es-info__title-group {
+    max-width: 400px;
+    top: 77px;
+    left: 56px;
+  }
+  #es-garnier.es-garnier .es-info__title {
+    font-size: 30px;
+  }
+  #es-garnier.es-garnier .es-info__subtitle {
+    align-self: flex-start;
+    margin-left: 40px;
+    font-size: 22px;
+  }
+  #es-garnier.es-garnier .es-info__border-img {
+    left: 10%;
+  }
+  #es-garnier.es-garnier .es-info__border-img--after {
+    left: 83%;
+  }
+}
+@media screen and (min-width: 767px) {
+  #es-garnier.es-garnier .es-info__wrapper {
+    display: flex;
+  }
+  #es-garnier.es-garnier .es-info__packshot {
+    flex: 1;
+    flex-basis: 47%;
+  }
+  #es-garnier.es-garnier .es-info__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5px;
+    flex: 1;
+    flex-basis: 50%;
+  }
+  #es-garnier.es-garnier .es-info__single {
+    padding: 20px;
+    max-width: 185px;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 870px) {
   #es-garnier.es-garnier .es-kv__container {
@@ -456,6 +508,22 @@ body {
     top: 85px;
     flex-basis: 70%;
     position: relative;
+  }
+  #es-garnier.es-garnier .es-info__container {
+    justify-content: center;
+    gap: 15px;
+  }
+  #es-garnier.es-garnier .es-info__packshot {
+    flex: 1;
+    flex-basis: 50%;
+  }
+  #es-garnier.es-garnier .es-info__single {
+    padding: 20px;
+    max-width: 210px;
+    margin-bottom: 0;
+  }
+  #es-garnier.es-garnier .es-info__single:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
