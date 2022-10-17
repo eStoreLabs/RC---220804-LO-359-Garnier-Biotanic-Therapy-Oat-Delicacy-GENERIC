@@ -119,13 +119,15 @@ body {
       gap: 10px;
       order: 2;
       padding: 5px;
+      font-family: 'Gotham Bold', sans-serif;
     }
     &__label-image {
-      width: auto;
+      width: 80px;
     }
     &__label-text {
       width: 50%;
-      font-size: 13px;
+      font-size: 10px;
+      align-self: flex-end;
     }
     &__packshot {
       padding: 10px;
@@ -397,16 +399,18 @@ body {
         align-items: center;
         min-height: 462px;
         padding: 10px;
+        margin-bottom: 30px;
         background: url(images/photo.jpg) no-repeat;
         background-size: auto;
       }
       &__logo {
         flex: 1;
         flex-basis: 50%;
+        height: 328px;
         background: none;
       }
       &__logo-image {
-        width: auto;
+        width: 274px;
       }
       &__packshot {
         flex: 1;
@@ -415,6 +419,55 @@ body {
       }
       &__label {
         position: static;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        left: 0;
+        // top: 0;
+      }
+      &__label-text {
+        width: 110px;
+        color: #fff;
+      }
+    }
+  }
+
+  @media screen and (min-width: 870px) {
+    .es-kv {
+      &__container {
+        flex-wrap: nowrap;
+        margin-bottom: 100px;
+        height: 350px;
+        min-height: auto;
+      }
+      &__logo {
+        // align-self: flex-end;
+      }
+      &__logo-image {
+        padding-top: 20px;
+        width: 240px;
+      }
+      &__label {
+        order: -1;
+        margin-top: 10px;
+        align-self: flex-end;
+        margin-bottom: 0;
+      }
+      &__packshot {
+        top: 85px;
+        flex-basis: 70%;
+        position: relative;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .es-kv {
+      &__container {
+        align-items: flex-start;
+      }
+      &__image {
+        width: 416px;
+        max-width: none;
       }
     }
   }
