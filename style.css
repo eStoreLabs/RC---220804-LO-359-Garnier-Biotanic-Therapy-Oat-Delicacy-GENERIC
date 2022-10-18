@@ -167,6 +167,7 @@ body {
   margin-bottom: 20px;
 }
 #es-garnier.es-garnier .es-info__card-image {
+  width: 75px;
   margin-bottom: 15px;
 }
 #es-garnier.es-garnier .es-info__card-title {
@@ -178,7 +179,7 @@ body {
   font-weight: inherit;
   margin-bottom: 10px;
   font-family: "Gotham Bold", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 #es-garnier.es-garnier .es-info__card-subtitle {
@@ -189,6 +190,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   text-align: center;
+  font-size: 14px;
 }
 #es-garnier.es-garnier .es-ba__image-container {
   position: relative;
@@ -444,6 +446,23 @@ body {
     width: 110px;
     color: #fff;
   }
+  #es-garnier.es-garnier .es-info__container {
+    max-width: 745px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 25px;
+    flex: 1;
+    flex-basis: 50%;
+  }
+  #es-garnier.es-garnier .es-info__single {
+    width: 220px;
+  }
+  #es-garnier.es-garnier .es-info__single:not(:last-child) {
+    margin-bottom: 0;
+  }
   #es-garnier.es-garnier .es-info__title-group {
     max-width: 400px;
     top: 77px;
@@ -467,24 +486,15 @@ body {
 @media screen and (min-width: 767px) {
   #es-garnier.es-garnier .es-info__wrapper {
     display: flex;
+    align-items: center;
   }
   #es-garnier.es-garnier .es-info__packshot {
     flex: 1;
     flex-basis: 47%;
   }
-  #es-garnier.es-garnier .es-info__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 5px;
-    flex: 1;
-    flex-basis: 50%;
-  }
   #es-garnier.es-garnier .es-info__single {
     padding: 20px;
-    max-width: 185px;
-    margin-bottom: 20px;
+    max-width: 150px;
   }
 }
 @media screen and (min-width: 870px) {
@@ -511,6 +521,7 @@ body {
   }
   #es-garnier.es-garnier .es-info__container {
     justify-content: center;
+    align-items: center;
     gap: 15px;
   }
   #es-garnier.es-garnier .es-info__packshot {
@@ -518,11 +529,9 @@ body {
     flex-basis: 50%;
   }
   #es-garnier.es-garnier .es-info__single {
-    padding: 20px;
-    max-width: 210px;
-    margin-bottom: 0;
-  }
-  #es-garnier.es-garnier .es-info__single:not(:last-child) {
+    padding: 20px 10px;
+    max-width: 180px;
+    height: 240px;
     margin-bottom: 0;
   }
 }
@@ -533,6 +542,12 @@ body {
   #es-garnier.es-garnier .es-kv__image {
     width: 416px;
     max-width: none;
+  }
+  #es-garnier.es-garnier .es-info__container {
+    padding-top: 80px;
+  }
+  #es-garnier.es-garnier .es-info__single {
+    max-width: 215px;
   }
 }
 
