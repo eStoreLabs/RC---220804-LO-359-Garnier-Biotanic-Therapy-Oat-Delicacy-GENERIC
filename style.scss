@@ -296,8 +296,9 @@ body {
       @include img;
     }
     &__title {
-      font-size: 14px;
+      font-size: 13px;
       color: #fff;
+      text-align: center;
     }
     &__single {
       margin-bottom: 20px;
@@ -312,6 +313,7 @@ body {
     }
     &__title {
       @include text;
+      margin-bottom: 30px;
       font-family: 'Gotham Bold', sans-serif;
       font-size: 20px;
       color: $dark-pink;
@@ -439,10 +441,9 @@ body {
       }
       &__label {
         position: static;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         margin-top: 20px;
-        left: 0;
-        // top: 0;
+        margin-left: 3%;
       }
       &__label-text {
         width: 110px;
@@ -512,6 +513,15 @@ body {
         text-align: center;
       }
     }
+
+    .es-cross {
+      &__container {
+        padding-top: 50px;
+      }
+      &__title {
+        margin-bottom: 65px;
+      }
+    }
   }
 
   @media screen and (min-width: 600px) {
@@ -544,6 +554,23 @@ body {
       }
       &__title {
         font-size: 50px;
+      }
+    }
+
+    .es-cross {
+      &__title {
+        margin: auto;
+        margin-bottom: 65px;
+        max-width: 735px;
+        text-align: center;
+      }
+      &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+      }
+      &__single {
+        width: 200px;
       }
     }
   }
@@ -634,7 +661,7 @@ body {
     .es-kv {
       &__container {
         flex-wrap: nowrap;
-        margin-bottom: 100px;
+        margin-bottom: 45px;
         height: 350px;
         min-height: auto;
       }
