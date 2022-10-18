@@ -292,6 +292,9 @@ body {
     &__image {
       @include img;
     }
+    &__packshot-image {
+      @include img;
+    }
     &__title {
       font-size: 14px;
       color: #fff;
@@ -488,6 +491,27 @@ body {
         }
       }
     }
+
+    .es-pack {
+      &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 500px;
+        margin: auto;
+      }
+      &__single {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+      }
+      &__title {
+        text-align: center;
+      }
+    }
   }
 
   @media screen and (min-width: 600px) {
@@ -568,6 +592,42 @@ body {
         text-align: center;
       }
     }
+
+    .es-pack {
+      background: url('./images/background.png') no-repeat 80% center;
+
+      &__container {
+        display: block;
+      }
+      &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      &__wrapper {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        max-width: none;
+      }
+      &__single {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 400px;
+      }
+      &__title {
+        text-align: left;
+      }
+      &__image {
+        margin: initial;
+      }
+      &__text {
+        display: inline-block;
+        padding-left: 20px;
+        text-align: left;
+      }
+    }
   }
 
   @media screen and (min-width: 870px) {
@@ -613,6 +673,12 @@ body {
         max-width: 180px;
         height: 240px;
         margin-bottom: 0;
+      }
+    }
+
+    .es-pack {
+      &__packshot-image {
+        max-width: 440px;
       }
     }
   }
