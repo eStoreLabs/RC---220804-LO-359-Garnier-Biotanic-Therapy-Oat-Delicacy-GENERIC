@@ -449,6 +449,7 @@ body {
 
     .es-info {
       &__container {
+        background: url(./images/info-bg.png) no-repeat center;
         max-width: 745px;
         display: flex;
         flex-wrap: wrap;
@@ -569,6 +570,7 @@ body {
     .es-info {
       &__container {
         padding-top: 80px;
+        background-position: center 63%;
       }
       &__single {
         max-width: 215px;

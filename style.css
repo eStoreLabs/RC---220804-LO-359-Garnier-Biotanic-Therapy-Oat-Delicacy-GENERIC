@@ -447,6 +447,7 @@ body {
     color: #fff;
   }
   #es-garnier.es-garnier .es-info__container {
+    background: url(./images/info-bg.png) no-repeat center;
     max-width: 745px;
     display: flex;
     flex-wrap: wrap;
@@ -545,6 +546,7 @@ body {
   }
   #es-garnier.es-garnier .es-info__container {
     padding-top: 80px;
+    background-position: center 63%;
   }
   #es-garnier.es-garnier .es-info__single {
     max-width: 215px;
